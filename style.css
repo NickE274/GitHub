@@ -246,6 +246,11 @@ margin-bottom: 95px;
     color:#F26376;
 }
 
+.button:hover{
+    background: #F16D7F;
+color: #FFFFFF;
+}
+
 .offers {
     height: 341px;
     background-color: #222224;
@@ -398,6 +403,11 @@ border: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social__network:hover{
+    background-color: #F16D7F;    ;
+fill: #FFFFFF;
 }
 
 .new_arrivals {
