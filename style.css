@@ -431,3 +431,10 @@ color: #636363;
 .new_arrivals_span {
 color: #F16D7F;
 }
+
+.product__wallpaper {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7;
+
+}
