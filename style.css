@@ -247,7 +247,7 @@ margin-bottom: 95px;
 
 .button:hover{
     background: #F16D7F;
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .offers {
@@ -406,7 +406,7 @@ border: 0px;
 
 .social__network:hover{
     background-color: #F16D7F;    ;
-fill: #FFFFFF;
+    fill: #FFFFFF;
 }
 
 .new_arrivals {
