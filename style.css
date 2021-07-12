@@ -436,5 +436,30 @@ color: #F16D7F;
     display: flex;
     justify-content: center;
     background-color: #F7F7F7;
+    ;
 
+}
+.product__img {
+    margin-bottom: 60px;
+}
+
+.product__text {
+    display: flex;
+    justify-content: center;
+}
+
+.product__text__word {
+    background-color: white;
+    text-align: center;
+    width: 1141px;
+    height: 601px;
+    border: 1px solid #EAEAEA;
+    margin: -90px 0 129px 0;
+}
+
+.product__choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 128px;
 }
