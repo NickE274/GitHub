@@ -12,145 +12,6 @@ body {
     padding: 0 10px;
 }
 
-header {
-    background-color: #222;
-    padding: 18px 0;
-}
-
-.header__wrap {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__logo {
-    margin-right: 40px;
-    text-decoration: none;
-}
-
-.header__right {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__item:not(:last-child) {
-    margin-right: 33px;
-}
-
-.cover {
-    background-color: #F1E4E6;
-    height: 764px;
-    margin-bottom: 30px;
-}
-
-.cover__wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-image:url(img/man.png);
-    background-repeat: no-repeat;
-    background-position: -212px;
-}
-
-.cover__text{
-    max-width: 400px;
-    font-size: 25px;
-    padding-left: 20px;
-    border-left: 12px solid #F16D7F;
-    line-height: 40px;
-}
-
-.size {
-    font-size: 32px;
-}
-
-.color {
-    color: #F16D7F;
-}
-
-.category__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.category__item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-    line-height: 28px;
-    margin-bottom: 100px;
-}
-
-.category__item:not(:last-child) {
-    width: 360px;
-    margin-bottom: 30px;
-    height: 260px;
-}
-
-.category__text {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 8px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.category__decor {
-    font-size: 24px;
-    color: #F16D7F;
-}
-
-.photo__woman {
-    background: linear-gradient(
-    to bottom,
-    rgba(33,22,22,0.7),
-    rgba(33,22,22,0.7)
-    ),
-    url(img/for_woman.png);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.photo__man {
-    background: linear-gradient(
-    to bottom,
-    rgba(33,22,22,0.7),
-    rgba(33,22,22,0.7)
-    ),
-    url(img/for_man.png);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.photo__kids {
-    background: linear-gradient(
-    to bottom,
-    rgba(33,22,22,0.7),
-    rgba(33,22,22,0.7)
-    ),
-    url(img/for_kids.png);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.photo__accesories {
-    background: linear-gradient(
-    to bottom,
-    rgba(33,22,22,0.7),
-    rgba(33,22,22,0.7)
-    ),
-    url(img/for_accesories.png);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .catalog__paragraph {
     text-align: center;
     line-height: 30px;
@@ -202,9 +63,6 @@ header {
     color: #F16D7F;
 }
 
-.catalog__pages {
-
-}
 
 .catalog__pages__number {
     border: 1px solid #EBEBEB;
@@ -295,118 +153,6 @@ margin-bottom: 25px;
 .offers__heading {
     margin-bottom: 16px;
     font-weight: 400;
-}
-
-.footer__top {
-    background-image: linear-gradient(
-    to bottom,
-    rgba(244,244,244,0.7),
-    rgba(244,244,244,0.7)
-    ),
-    url(img/beach.jpg);
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.beach{    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 448px;
-}
-
-.left {
-    text-align: center;
-}
-
-.left__img {
-    margin-bottom: 24px;
-}
-
-.left__text {
-    width: 360px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.right {
-    text-align: center;
-
-}
-
-.right__p {
-    margin-bottom: 32px;
-}
-
-.right__span {
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 167.2%;
-color: #222224;
-}
-
-.right__form {
-width: 356px;
-height: 49px;
-display: flex;
-justify-content: space-between;
-padding-left: 22px;
-border-radius: 50px 0 0 50px;
-border: 0px;
-background-color: #E1E1E1;
-}
-
-.inlet{
-background-color: #E1E1E1;
-outline: none; 
-border: none;
-color: #222224;
-}
-
-.send {
-border-radius: 0 50px 50px 0;
-width: 100px;
-background-color: #F16D7F;
-color: #FFFFFF;
-border: 0px;
-}
-
-.footer__bottom {
-    background: #222224;
-}
-
-.info{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.copy {
-    color: #fbfbfb;
-}
-
-.social {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.social__network {
-    width: 32px;
-    height: 32px;
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social__network:hover{
-    background-color: #F16D7F;    ;
-    fill: #FFFFFF;
 }
 
 .new_arrivals {
@@ -541,3 +287,11 @@ margin-bottom: 65px;
     justify-content: space-between;
     margin-bottom: 128px;
 }
+
+@import "block/header";
+
+@import "block/footer";
+
+@import "block/index";
+
+@import "block/cart";
