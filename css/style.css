@@ -897,4 +897,60 @@ body {
 .registration__info__two h1 svg {
   padding-right: 23px;
 }
+
+.catalog__filter {
+  cursor: pointer;
+  width: 80px;
+  background-color: #ffffff;
+}
+
+.catalog__filter[open] {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  color: #EF5B70;
+  fill: #EF5B70;
+  padding-left: 17px;
+  width: 360px;
+  height: 100%;
+}
+
+.catalog__filter summary {
+  margin-bottom: 17px;
+  list-style: none;
+}
+
+.catalog__filter div {
+  position: absolute;
+  width: 360px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.catalog__filter div details {
+  margin-bottom: 17px;
+}
+
+.catalog__filter div .adoption {
+  border-left: 6px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 10px;
+}
+
+.catalog__filter div ul {
+  -webkit-padding-start: 17px;
+          padding-inline-start: 17px;
+}
+
+.catalog__filter div ul li {
+  list-style: none;
+  line-height: 30px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.catalog__filter div ul li a {
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
