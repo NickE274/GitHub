@@ -19,56 +19,6 @@ body {
   margin-bottom: 50px;
 }
 
-.catalog__choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.catalog__choice :nth-last-child(n+4) {
-  margin-bottom: 25px;
-}
-
-.catalog__icon {
-  height: 581px;
-  width: 360px;
-  background: #F8F8F8;
-}
-
-.tuning {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 420px;
-  text-align: center;
-  margin-bottom: 7px;
-  line-height: 12px;
-}
-
-.catalog__text {
-  padding: 18px;
-}
-
-.catalog__indent {
-  margin-bottom: 13px;
-}
-
-.catalog__description {
-  margin-bottom: 18px;
-  color: #5D5D5D;
-  font-weight: 300;
-  font-size: 14px;
-}
-
-.catalog__price {
-  color: #F16D7F;
-}
-
 .catalog__pages__number {
   border: 1px solid #EBEBEB;
   display: -webkit-box;
@@ -964,5 +914,89 @@ body {
 
 .catalog__filter div .filter--menu ul li a {
   text-decoration: none;
+}
+
+.catalog__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.catalog__choice :nth-last-child(n+4) {
+  margin-bottom: 25px;
+}
+
+.catalog__icon {
+  width: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.catalog__icon:hover .overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 73.5%;
+  background: rgba(58, 56, 56, 0.86);
+  opacity: 0;
+  pointer-events: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iris {
+  color: #ffffff;
+  outline: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.catalog__text {
+  padding: 18px;
+}
+
+.catalog__indent {
+  margin-bottom: 13px;
+}
+
+.catalog__description {
+  margin-bottom: 18px;
+  color: #5D5D5D;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.catalog__price {
+  color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
