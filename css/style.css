@@ -934,35 +934,35 @@ body {
   padding-left: 17px;
 }
 
-.catalog__filter div details {
+.catalog__filter div .filter--menu {
   margin-bottom: 17px;
-}
-
-.catalog__filter div details .2[open] {
-  color: red;
-}
-
-.catalog__filter div .adoption {
-  border-left: 6px solid #EF5B70;
-  border-bottom: 1px solid #EBEBEB;
-  padding: 10px;
   color: black;
 }
 
-.catalog__filter div ul {
+.catalog__filter div .filter--menu[open] {
+  color: #EF5B70;
+}
+
+.catalog__filter div .filter--menu .adoption {
+  border-left: 6px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 10px;
+  list-style: none;
+}
+
+.catalog__filter div .filter--menu ul {
   -webkit-padding-start: 17px;
           padding-inline-start: 17px;
 }
 
-.catalog__filter div ul li {
+.catalog__filter div .filter--menu ul li {
   list-style: none;
   line-height: 30px;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
 
-.catalog__filter div ul li a {
+.catalog__filter div .filter--menu ul li a {
   text-decoration: none;
-  color: black;
 }
 /*# sourceMappingURL=style.css.map */

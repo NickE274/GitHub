@@ -8,7 +8,7 @@
     border: none;
     outline: none;
 
-    &open]{
+    &[open]{
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         color: #EF5B70;
         fill: #EF5B70;
@@ -29,17 +29,20 @@
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding-left: 17px;
 
-            &  details {
+            &  .filter--menu {
             margin-bottom: 17px;
-        }
+            color: black;
+
+            &[open]{
+                color:#EF5B70;
+            }
 
             & .adoption{
             border-left: 6px solid #EF5B70;
             border-bottom: 1px solid #EBEBEB;
             padding: 10px;
-            color: black;
+            list-style: none;
             }
-
 
                 & ul {
                 padding-inline-start: 17px;
@@ -51,10 +54,9 @@
 
                         & a{
                         text-decoration: none;
-                        color: black;
                         }
                     }
                 }
-            
+            }
     }
 }
