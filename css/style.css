@@ -66,6 +66,8 @@ body {
   width: 211px;
   height: 47px;
   color: #F26376;
+  text-decoration: none;
+  padding: 14.5px 38.5px;
 }
 
 .button:hover {
@@ -309,6 +311,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__item:not(:last-child) {
@@ -983,6 +988,7 @@ body {
 
 .catalog__text {
   padding: 18px;
+  background: #F8F8F8;
 }
 
 .catalog__indent {
