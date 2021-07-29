@@ -141,4 +141,25 @@ border: 0px;
         }
     }
 
+        .beach {
+    
+                & .left {
+                   width: 100%;
+
+                   & .left__text{
+                       width: 100%;
+                   }
+                }
+
+                & .right {
+                    width: 100%;
+
+                    & .right__form {
+                        width: 100%;
+                    }
+                }
+        }
+    
+
+    
 }

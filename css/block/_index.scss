@@ -139,11 +139,19 @@
 }
 
 
-@media (max-width: 375px)  {
+@media (max-width: 376px)  {
 
     .cover__wrap{
     background-image: none;
-    color: brown;
+    padding-left:7%;
+    }
+
+    .category__wrap {
+        flex-direction: column;
+
+        & .category__item{
+            width: 100%;
+        }
     }
 
 }

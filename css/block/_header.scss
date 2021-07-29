@@ -131,3 +131,18 @@ h3 {
 }
     
 }
+
+@media (max-width:376px) {
+
+    .delete {
+        display: none;
+    }
+
+    .header__item {
+        margin-right: auto !important;
+    }
+    
+    .header__wrap {
+        padding: 0 16px;
+    }
+}

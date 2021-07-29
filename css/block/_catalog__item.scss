@@ -108,7 +108,12 @@
 
 }
 
+
 @media (max-width:375px) {
-    .catalog
+    .tuning {
+        & img {
+            width: 100%;
+        }
+    }
     
 }

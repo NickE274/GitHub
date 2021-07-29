@@ -21,6 +21,12 @@ body {
     text-align: center;
     line-height: 30px;
     margin-bottom: 50px;
+
+        & p{
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        }
 }
 
 .catalog__pages__number {
@@ -250,6 +256,27 @@ margin-bottom: 65px;
     margin-bottom: 128px;
 }
 
+@media (max-width:1100px) {
+    
+    .offers__top {
+        flex-direction: column;
+    }
+
+    .offers__settings:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media (max-width: 376px)  {
+
+    .offers__settings {
+        width: 100%;
+    }
+
+}
+
 @import "block/header";
 
 @import "block/footer";
@@ -263,16 +290,4 @@ margin-bottom: 65px;
 @import "block/filter";
 
 @import "block/catalog__item";
-
-@media (max-width:1100px) {
-    
-    .offers__top {
-        flex-direction: column;
-    }
-
-    .offers__settings:not(:last-child) {
-        margin-bottom: 50px;
-    }
-
-}
 
