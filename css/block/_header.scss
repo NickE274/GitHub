@@ -114,3 +114,20 @@ h3 {
     cursor: pointer;
     font-size: 25px;
 }
+
+
+@media (max-width: 768px)  {
+    
+.header__wrap {
+    padding: 0 32px;
+}
+
+.cover {
+    height: calc(45vh - 65px) !important;
+}
+
+.nav {
+    height: calc(45vh - 65px) !important;
+}
+    
+}

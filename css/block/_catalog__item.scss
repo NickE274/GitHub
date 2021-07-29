@@ -15,14 +15,18 @@
 //     background: #F8F8F8;
 //     overflow: hidden;
 //     position: relative;
-// }
+//  }
 
 .catalog__icon {
     width: 360px;
     overflow: hidden;
-    position: relative;
+
   }
-  
+
+  .icon {
+          position: relative;
+  }
+   
   .catalog__icon:hover .overlay {
     opacity: 1;
     pointer-events: all;
@@ -82,4 +86,29 @@
 
 .catalog__price {
     color: #F16D7F;
+}
+
+@media (max-width:1100px) {
+
+    .catalog__choice {
+        justify-content: center;
+    }
+
+    .catalog__icon:nth-child(odd) {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width:760px) {
+
+    .catalog__icon {
+        margin-right: 0 !important;
+    }
+
+}
+
+@media (max-width:375px) {
+    .catalog
+    
 }

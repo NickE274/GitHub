@@ -13,7 +13,7 @@
         color: #EF5B70;
         fill: #EF5B70;
         width: 360px;
-        height: 100%;
+        position: absolute;
     }
 
     & summary {
@@ -24,7 +24,7 @@
 
     &  div {
         position: absolute;
-        width: 343px;
+        width: 360px;
         background-color: #ffffff;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding-left: 17px;
