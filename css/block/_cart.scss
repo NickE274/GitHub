@@ -138,7 +138,7 @@
             & p {
 
                 &:nth-child(1){
-                    margin-right: -202px;
+                    text-align: right;
                     margin-bottom: 12px;
                     font-size: 11px;
                     line-height: 13px;
@@ -147,7 +147,7 @@
                 }
 
                 &:nth-child(2){
-                    margin-right: -133px;
+                    text-align: right;
                     margin-bottom: 21px;
                     font-weight: 300;
                     font-size: 16px;
@@ -161,7 +161,7 @@
             }
 
             & hr {
-                width: 275px;
+                width: 100%;
                 margin: auto auto 17px auto;
                 border: 1px solid #E2E2E2;
             }
@@ -292,4 +292,66 @@
         }
     } 
 
+}
+
+@media (max-width:600px) {
+
+    .value {
+
+        & div {
+
+            & div {
+
+                & .purchases {
+
+                    & img {
+                        height: 188px;
+                    }
+
+                    &__info {
+
+                        & div {
+
+                            & h1 {
+                                    width: 100%;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #222222;
+                            }
+        
+                            & p {
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #575757;
+
+        
+                                    & span {
+                                        color:#F16D7F;
+                                    }
+                                    
+                                    &.p__two{
+                                        
+                                        & .two {
+                                            border: 1px solid #EAEAEA;
+                                            color: #656565;
+                                            padding: 0 16px;
+                                        }
+                                    }
+                            
+                            }
+                        }
+                    }
+
+                    & svg {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        & .cost {
+            flex-direction: column;
+        }
+    }
 }

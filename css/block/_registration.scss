@@ -80,7 +80,7 @@
     }
 
     &__two {
-        width: 652px;
+        width: 58%;
 
         & h1{
             font-weight: 300;
@@ -100,8 +100,53 @@
 
             & svg {
                 padding-right: 23px;
+                box-sizing: revert;
             }
 
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .registration__info {
+        padding: 0 20px;
+
+        &__one {
+            width: 48%;
+        }
+
+        &__two {
+            width: 48%;
+
+            & h1{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+
+                &:nth-child(1) {
+                    padding-bottom: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:426px) {
+
+    .registration__info {
+        display: flex;
+        flex-direction: column;
+
+        &__one{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__two{
+            width: 100%;
         }
     }
 }

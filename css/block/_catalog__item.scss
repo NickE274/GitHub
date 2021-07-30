@@ -115,6 +115,31 @@
 }
 
 
+@media (max-width:1100px) {
+
+    .choice:nth-child(3) {
+        display: none;
+    }
+
+    .choice:nth-child(2){
+        margin-right: 0 !important;
+    }
+
+    .choice:nth-child(1){
+        margin-right: 20px !important;
+    }
+
+    .choice:nth-last-child(2n+2){
+        margin-right: 20px;
+    }
+
+    .choice:nth-last-child(odd){
+        margin-right: 0;
+    }
+    
+}
+
+
 @media (max-width:375px) {
     .tuning {
         & img {
@@ -128,5 +153,13 @@
 
   .overlay {
     height: 66.5%;}
+    
+}
+
+@media (max-width:760px) {
+
+    .choice:nth-child(1){
+        margin-right: 0px !important;
+    }
     
 }
