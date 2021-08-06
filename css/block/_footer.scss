@@ -1,3 +1,7 @@
+footer {
+    margin-top: auto
+}
+
 .footer__top {
     background-image: linear-gradient(
     to bottom,
@@ -16,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     height: 448px;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -55,7 +60,7 @@ height: 49px;
 display: flex;
 justify-content: space-between;
 padding-left: 22px;
-border-radius: 50px 0 0 50px;
+border-radius: 50px 50px 50px 50px;
 border: 0px;
 background-color: #E1E1E1;
 }
@@ -76,7 +81,7 @@ border: 0px;
 }
 
 .footer__bottom {
-    background: #222224;
+    background: #222224;;
 }
 
 .info{
@@ -108,4 +113,53 @@ border: 0px;
 .social__network:hover{
     background-color: #F16D7F;    ;
     fill: #FFFFFF;
+}
+
+@media (max-width:768px) {
+    
+    .beach {
+        flex-direction: column;
+        padding: 50px 0;
+        height: 100%;
+
+            & .left {
+                padding-bottom: 50px;
+            }
+    }
+
+}
+
+@media (max-width:426px) {
+    
+    .info {
+        flex-direction: column-reverse;
+        padding: 43px 0 10px 0;
+        height: 100%;
+
+        .copy {
+            padding-top: 40px;
+        }
+    }
+
+        .beach {
+    
+                & .left {
+                   width: 100%;
+
+                   & .left__text{
+                       width: 100%;
+                   }
+                }
+
+                & .right {
+                    width: 100%;
+
+                    & .right__form {
+                        width: 100%;
+                    }
+                }
+        }
+    
+
+    
 }

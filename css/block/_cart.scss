@@ -105,10 +105,6 @@
             & form {
 
                 & input {
-                    
-                    &:nth-child(1){
-
-                    }
 
                     &:nth-child(4){
                         border: 1px solid #A4A4A4;
@@ -142,7 +138,7 @@
             & p {
 
                 &:nth-child(1){
-                    margin-right: -202px;
+                    text-align: right;
                     margin-bottom: 12px;
                     font-size: 11px;
                     line-height: 13px;
@@ -151,7 +147,7 @@
                 }
 
                 &:nth-child(2){
-                    margin-right: -133px;
+                    text-align: right;
                     margin-bottom: 21px;
                     font-weight: 300;
                     font-size: 16px;
@@ -165,7 +161,7 @@
             }
 
             & hr {
-                width: 275px;
+                width: 100%;
                 margin: auto auto 17px auto;
                 border: 1px solid #E2E2E2;
             }
@@ -180,6 +176,182 @@
                 padding: 16px 38px;
                 display: block;
             }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .value {
+        flex-direction: column;
+
+        & div {
+
+            & div {
+
+                & .purchases {
+                    width: 100%;
+                }
+            }
+
+            & .shopping__a {
+                justify-content: space-evenly;
+
+                a {
+                    padding: 0;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: #575757;
+                    padding: 8px 17px ;
+                }
+            }
+        }
+
+        & .cost {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+    }
+    
+}
+
+@media (max-width:426px) {
+
+    .shopping {
+        display: flex;
+        justify-content: center;
+    }
+
+    .value {
+
+        & div {
+
+            & div {
+
+                & .purchases {
+
+                    & img {
+                        height: 188px;
+                    }
+
+                    &:nth-child(2){
+                        margin-bottom: 35px;
+                    }
+
+
+                    &__info {
+
+                            & div {
+
+                                & h1 {
+                                    width: 100%;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #222222;
+                                }
+        
+                                & p {
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #575757;
+
+        
+                                    & span {
+                                        color:#F16D7F;
+                                    }
+                                    
+                                    &.p__two{
+                                        
+                                        & .two {
+                                            border: 1px solid #EAEAEA;
+                                            color: #656565;
+                                            padding: 0 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    & svg {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+
+            & .shopping__a {
+                margin-bottom: 48px;
+            }
+        }
+
+        & .cost {
+            flex-direction: column;
+        }
+    } 
+
+}
+
+@media (max-width:600px) {
+
+    .value {
+
+        & div {
+
+            & div {
+
+                & .purchases {
+
+                    & img {
+                        height: 188px;
+                    }
+
+                    &__info {
+
+                        & div {
+
+                            & h1 {
+                                    width: 100%;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #222222;
+                            }
+        
+                            & p {
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #575757;
+
+        
+                                    & span {
+                                        color:#F16D7F;
+                                    }
+                                    
+                                    &.p__two{
+                                        
+                                        & .two {
+                                            border: 1px solid #EAEAEA;
+                                            color: #656565;
+                                            padding: 0 16px;
+                                        }
+                                    }
+                            
+                            }
+                        }
+                    }
+
+                    & svg {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        & .cost {
+            flex-direction: column;
         }
     }
 }
